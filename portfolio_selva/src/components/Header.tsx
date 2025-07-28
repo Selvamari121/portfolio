@@ -1,6 +1,5 @@
-// components/Header.tsx
 import { useState } from "react";
-import { Menu, X, Code, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 
 interface HeaderProps {
   scrolled: boolean;
@@ -32,14 +31,7 @@ const Header = ({ scrolled, isDarkMode, toggleDarkMode }: HeaderProps) => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2">
-            <Code size={28} className="text-purple-700 dark:text-purple-400" />
-            <span className="text-xl font-bold text-gray-900 dark:text-white">
-              Selvamari S
-            </span>
-          </a>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -63,7 +55,6 @@ const Header = ({ scrolled, isDarkMode, toggleDarkMode }: HeaderProps) => {
             </button>
           </nav>
 
-          {/* Mobile Navigation Button */}
           <div className="flex items-center md:hidden gap-4">
             <button
               onClick={toggleDarkMode}
@@ -90,7 +81,6 @@ const Header = ({ scrolled, isDarkMode, toggleDarkMode }: HeaderProps) => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden py-4 animate-fade-in bg-white dark:bg-gray-900">
             <nav className="flex flex-col gap-4">

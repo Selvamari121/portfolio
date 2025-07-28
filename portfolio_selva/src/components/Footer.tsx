@@ -42,7 +42,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
           <p>
-            © {currentYear} Selvamari S | Built with ❤️ using Spring Boot,
+            © {currentYear} Selvamari S | Built with using Spring Boot,
             React, and Vite.
           </p>
         </div>

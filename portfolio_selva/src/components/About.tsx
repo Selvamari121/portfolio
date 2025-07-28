@@ -81,7 +81,7 @@ const About = () => {
               style={{ animationDelay: "0.3s" }}
             >
               <h3 className="text-2xl font-semibold mb-4">
-                👩‍💻 Hello, I'm Selvamari S
+                Hello, I'm Selvamari S
               </h3>
               <p className="text-gray-700">
                 A highly motivated{" "}
@@ -103,7 +103,7 @@ const About = () => {
                 always aiming to deliver robust and maintainable solutions.
               </p>
               <p className="text-gray-700">
-                🎯 <span className="font-medium">Goal</span>: To build
+              <span className="font-medium">Goal</span>: To build
                 high-quality software that solves real problems and supports
                 seamless user experiences.
               </p>
@@ -117,7 +117,7 @@ const About = () => {
               }`}
               style={{ animationDelay: "0.6s" }}
             >
-              <h4 className="font-semibold text-xl mb-4">🧠 Key Strengths</h4>
+              <h4 className="font-semibold text-xl mb-4"> Key Strengths</h4>
               <div className="space-y-4">
                 {strengths.map((strength, index) => (
                   <div

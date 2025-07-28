@@ -66,7 +66,6 @@ const Education = () => {
         </p>
 
         <div className="mt-12 relative">
-          {/* Timeline line */}
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-purple-200 transform md:translate-x-px"></div>
 
           <div className="space-y-12">
@@ -78,7 +77,6 @@ const Education = () => {
                 }`}
                 style={{ animationDelay: `${0.2 * index}s` }}
               >
-                {/* Timeline dot */}
                 <div className="absolute left-0 md:left-1/2 top-0 w-4 h-4 rounded-full bg-purple-600 transform -translate-x-1.5 md:-translate-x-2"></div>
 
                 <div

@@ -1,4 +1,3 @@
-// App.tsx
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -13,7 +12,6 @@ import Footer from "./components/Footer";
 function App() {
   const [scrolled, setScrolled] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Check local storage or user preference
     if (typeof window !== "undefined") {
       const savedMode = localStorage.getItem("darkMode");
       if (savedMode !== null) {
@@ -29,10 +27,8 @@ function App() {
   };
 
   useEffect(() => {
-    // Save to localStorage
     localStorage.setItem("darkMode", String(isDarkMode));
 
-    // Apply class to root element
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
     } else {
