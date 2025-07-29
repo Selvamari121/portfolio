@@ -64,7 +64,6 @@
     @apply px-3 py-1 rounded-full text-sm font-medium bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300;
   }
 
-  /* Dark mode specific styles for components */
   .hero-bg {
     @apply dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900;
   }
@@ -73,7 +72,6 @@
     @apply dark:bg-gray-800;
   }
 
-  /* Animation classes remain the same */
   .animate-fade-in {
     opacity: 0;
     animation: fadeIn 0.8s ease-in forwards;
@@ -104,4 +102,152 @@
       transform: translateY(0);
     }
   }
+}
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-tertiary: #6b7280;
+  --accent-primary: #7c3aed;
+  --accent-secondary: #8b5cf6;
+  --accent-light: #ede9fe;
+  --border-primary: #e5e7eb;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-tertiary: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #e5e7eb;
+  --text-tertiary: #9ca3af;
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #a78bfa;
+  --accent-light: #4c1d95;
+  --border-primary: #4b5563;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.bg-white {
+  background-color: var(--bg-primary) !important;
+}
+
+.bg-purple-50 {
+  background-color: var(--bg-secondary) !important;
+}
+
+.text-gray-700, .text-gray-600, .text-gray-500 {
+  color: var(--text-secondary) !important;
+}
+
+.text-gray-800, .text-gray-900 {
+  color: var(--text-primary) !important;
+}
+
+.border-purple-100, .border-gray-200 {
+  border-color: var(--border-primary) !important;
+}
+
+.bg-purple-100 {
+  background-color: var(--accent-light) !important;
+}
+
+.text-purple-700, .text-purple-800 {
+  color: var(--accent-primary) !important;
+}
+
+.bg-purple-600 {
+  background-color: var(--accent-primary) !important;
+}
+
+.bg-purple-700:hover {
+  background-color: var(--accent-secondary) !important;
+}
+
+.card {
+  background-color: var(--bg-primary);
+  border-color: var(--border-primary);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-secondary);
+}
+
+.btn-outline {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-light);
+}
+
+.skill-tag {
+  background-color: var(--accent-light);
+  color: var(--accent-primary);
+}
+
+.input-field {
+  background-color: var(--bg-primary);
+  border-color: var(--border-primary);
+  color: var(--text-primary);
+}
+
+.input-field:focus {
+  border-color: var(--accent-primary);
+}
+
+.dark .bg-gray-900 {
+  background-color: var(--bg-tertiary);
+}
+
+.dark .text-gray-400 {
+  color: var(--text-tertiary);
+}
+
+.dark .bg-gray-800 {
+  background-color: var(--bg-secondary);
+}
+
+.dark .from-purple-50 {
+  --tw-gradient-from: var(--bg-secondary);
+  --tw-gradient-to: var(--bg-secondary);
+}
+
+.dark .via-white {
+  --tw-gradient-to: var(--bg-primary);
+}
+
+.dark .to-purple-100 {
+  --tw-gradient-to: var(--bg-secondary);
+}
+
+.dark .from-white {
+  --tw-gradient-from: var(--bg-primary);
+}
+
+.dark .to-purple-50 {
+  --tw-gradient-to: var(--bg-secondary);
+}
+
+.dark .bg-purple-300 {
+  background-color: var(--accent-light);
+}
+
+.dark .bg-purple-100 {
+  background-color: var(--accent-light);
 }

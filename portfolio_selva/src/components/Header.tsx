@@ -30,7 +30,7 @@ const Header = ({ scrolled, isDarkMode, toggleDarkMode }: HeaderProps) => {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
 
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (

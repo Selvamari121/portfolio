@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Code } from "lucide-react";
+import { Github, Linkedin, Code } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,26 +17,20 @@ const Footer = () => {
 
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://github.com/Selvamari121"
               className="bg-gray-800 hover:bg-purple-700 p-2 rounded-full transition-colors"
               aria-label="GitHub"
             >
               <Github size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/selvamari-s-69a654280/"
               className="bg-gray-800 hover:bg-purple-700 p-2 rounded-full transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
-            <a
-              href="#"
-              className="bg-gray-800 hover:bg-purple-700 p-2 rounded-full transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter size={20} />
-            </a>
+            
           </div>
         </div>
 

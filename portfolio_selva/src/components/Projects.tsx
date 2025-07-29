@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import {
   Users,
-  Calculator,
   BookOpen,
   Github,
   ExternalLink,
@@ -50,7 +49,7 @@ const Projects = () => {
         "Mockito",
       ],
       icon: <Users size={24} />,
-      github: "#",
+      github: "https://github.com/Selvamari121",
       demo: null,
     },
     {
@@ -68,7 +67,7 @@ const Projects = () => {
         "PostgreSQL",
       ],
       icon: <BookOpen size={24} />,
-      github: "#",
+      github: "https://github.com/Selvamari121",
       demo: null,
     },
     {
@@ -78,39 +77,9 @@ const Projects = () => {
       image: null,
       stack: ["Java", "Spring Boot", "OpenCV", "JSON", "Jackson", "Gson"],
       icon: <BookOpen size={24} />,
-      github: "#",
+      github: "https://github.com/Selvamari121",
       demo: null,
-    },
-    {
-      title: "Banking System (Training Project)",
-      description:
-        "Built a secure banking application using Java, Spring Boot, and PostgreSQL. Integrated JWT authentication, role-based access, and RESTful architecture.",
-      image: null,
-      stack: ["Java", "Spring Boot", "JWT", "PostgreSQL", "React"],
-      icon: <Calculator size={24} />,
-      github: "#",
-      demo: null,
-    },
-    {
-      title: "Image Filter Application",
-      description:
-        "Developed a Java-based image filter app supporting multiple filters. Focused on modular UI design and backend processing.",
-      image: null,
-      stack: ["Java", "Image Processing", "Swing", "File I/O"],
-      icon: <BookOpen size={24} />,
-      github: "#",
-      demo: null,
-    },
-    {
-      title: "Weather Application",
-      description:
-        "Fetched real-time weather data using JavaScript and OpenWeatherMap API. Displayed formatted info via HTML/CSS UI with location search.",
-      image: null,
-      stack: ["JavaScript", "HTML", "CSS", "OpenWeatherMap API"],
-      icon: <BookOpen size={24} />,
-      github: "#",
-      demo: null,
-    },
+    }
   ];
 
   return (
